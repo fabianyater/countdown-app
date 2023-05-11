@@ -28,7 +28,7 @@ export const Form = () => {
   };
 
   return !isHidden && (
-    <fieldset className="w-full lg:w-96 p-0.5 rounded-2xl bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500">
+    <div className="w-full lg:w-96 p-0.5 rounded-2xl bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 animate-jump-in">
       <form className="bg-black p-4 rounded-2xl" onSubmit={handleSubmit}>
         <Input
           name="name"
@@ -45,7 +45,7 @@ export const Form = () => {
         />
         <Button>Crear evento</Button>
       </form>
-    </fieldset>
+    </div>
   );
 };
 
