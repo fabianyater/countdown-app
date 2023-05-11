@@ -1,5 +1,5 @@
 import { CustomButton } from "./components/CustomButton";
-import { Card } from "./components/Card";
+import { Cards } from "./components/Cards";
 import { Form } from "./components/Form";
 
 export default function Home() {
@@ -23,7 +23,7 @@ export default function Home() {
         ></div>
         <Form />
         <div className="w-full grid place-items-center grid-cols-1 gap-4 h-56 md:grid-cols-2 xl:grid-cols-3 pt-8 pb-8">
-          <Card />
+          <Cards />
         </div>
       </main>
     </>
