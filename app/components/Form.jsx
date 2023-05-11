@@ -1,8 +1,8 @@
 "use client";
 
 import { Input } from "./Input";
-import { Button } from "./Buttons";
-import { useContext, useEffect, useState } from "react";
+import { Button } from "./Button";
+import { useContext } from "react";
 import { FormContext } from "../context/form-provider";
 
 export const Form = () => {
@@ -41,7 +41,7 @@ export const Form = () => {
           name="calendar"
           id="calendar"
           label="Seleccionar fecha"
-          type="date"
+          type="datetime-local"
         />
         <Button>Crear evento</Button>
       </form>
