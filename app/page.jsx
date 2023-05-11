@@ -22,7 +22,7 @@ export default function Home() {
           }}
         ></div>
         <Form />
-        <div className="w-full grid place-items-center grid-cols-1 gap-4 h-56 md:grid-cols-2 xl:grid-cols-3 pt-8">
+        <div className="w-full grid place-items-center grid-cols-1 gap-4 h-56 md:grid-cols-2 xl:grid-cols-3 pt-8 pb-8">
           <Card />
         </div>
       </main>
