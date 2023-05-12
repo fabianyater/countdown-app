@@ -1,6 +1,7 @@
 import { CustomButton } from "./components/CustomButton";
 import { Cards } from "./components/Cards";
 import { Form } from "./components/Form";
+import { ToggleButton } from "./components/ToggleButton";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
           Mantén un seguimiento de tus próximos eventos
         </h2>
         <CustomButton />
+        <ToggleButton />
       </header>
       <main className="flex min-h-screen flex-col items-center justify-start pt-3 pr-3 pl-3 w-11/12 sm:w-4/5 mt-4 m-auto">
         <div

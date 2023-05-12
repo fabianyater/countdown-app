@@ -15,7 +15,7 @@ export const Cards = () => {
     data.slice().reverse().map((item, index) => (
       <div
         key={index}
-        className="tremor-Card-root relative w-full h-56 text-left ring-1 bg-[#d4d2d2] ring-gray-200 p-6 rounded-lg flex-1"
+        className="tremor-Card-root relative w-full h-56 text-left ring-1 bg-[#d4d2d2] dark:bg-[#1C1C1C] ring-gray-200 p-6 rounded-lg flex-1"
       >
         <div className="flex flex-col items-center justify-center h-full gap-8">
           <h2 className="text-2xl font-bold text-center">{item.name}</h2>
