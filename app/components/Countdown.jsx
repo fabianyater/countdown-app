@@ -5,7 +5,7 @@ export const Countdown = ( {date} ) => {
   const [days, hours, minutes, seconds] = useCountdown(date);
 
   return (
-    <div className="flex w-full items-center justify-between">
+    <div className="flex w-full items-center justify-around">
       <ShowTime value={days} type={days > 1 ? 'Días' : 'Día'} />
       <ShowTime value={hours} type={hours > 1 ? 'Horas' : 'Hora'} />
       <ShowTime value={minutes} type={minutes > 1 ? 'Minutos' : 'Minute'} />
