@@ -4,12 +4,16 @@ import { ShowTime } from "./ShowTime"
 export const Countdown = ( {date} ) => {
   const [days, hours, minutes, seconds] = useCountdown(date);
 
+  if (days + hours + minutes + seconds <= 0){
+    return <h1>Se acacbó</h1>
+  }
+
   return (
     <div className="flex w-full items-center justify-around">
-      <ShowTime value={days} type={days > 1 ? 'Días' : 'Día'} />
-      <ShowTime value={hours} type={hours > 1 ? 'Horas' : 'Hora'} />
-      <ShowTime value={minutes} type={minutes > 1 ? 'Minutos' : 'Minute'} />
-      <ShowTime value={seconds} type={seconds > 1 ? 'Seconds' : 'Segundo'} />
+      <ShowTime value={days} label={'Día'} />
+      <ShowTime value={hours} label={'Hora'} />
+      <ShowTime value={minutes} label={'Minuto'} />
+      <ShowTime value={seconds} label={'Segundo'} />
     </div>
   )
 }
