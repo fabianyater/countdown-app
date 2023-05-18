@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <header className="flex flex-col items-center justify-between pt-12 gap-5">
-        <h1 className="text-2xl sm:text-4xl font-bold">Mis recordatorios</h1>
+        <h1 className="text-2xl sm:text-4xl font-bold" style={{fontSize: 'clamp(1.5rem, 2.5vw, 2.25rem)'}}>Mis recordatorios</h1>
         <h2 className="text-center pr-4 pl-4">
           Mantén un seguimiento de tus próximos eventos
         </h2>
